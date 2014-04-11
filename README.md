@@ -61,7 +61,7 @@ function createElements() {
 
 ## MIT Licenced
 
-  [3]: http://david-dm.org/Colingo/form-data-set/status.png
-  [4]: http://david-dm.org/Colingo/form-data-set
-  [5]: http://ci.testling.com/Colingo/form-data-set.png
-  [6]: http://ci.testling.com/Colingo/form-data-set
+  [3]: http://david-dm.org/Raynos/form-data-set/status.png
+  [4]: http://david-dm.org/Raynos/form-data-set
+  [5]: http://ci.testling.com/Raynos/form-data-set.png
+  [6]: http://ci.testling.com/Raynos/form-data-set

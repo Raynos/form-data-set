@@ -1,6 +1,6 @@
 var walk = require('dom-walk')
 
-var FormData = require('../index.js')
+var FormData = require('./index.js')
 
 module.exports = getFormData
 

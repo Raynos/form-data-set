@@ -6,7 +6,11 @@ module.exports = getFormData
 
 function buildElems(rootElem) {
     var hash = {}
-
+    if (rootElem.name) {
+    	hash[rootElem.name] = rootElem
+    	return hash
+    }
+    
     walk(rootElem, function (child) {
         if (child.name) {
             hash[child.name] = child

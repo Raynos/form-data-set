@@ -20,3 +20,21 @@ test("FormData works with <select> elements", function (assert) {
 
     assert.end()
 })
+
+test("FormData works when <select> element has a value", function(assert) {
+    var elements = {
+        foo: h("select", {
+            value: "one"
+        }, [
+            h("option", { value: "two" })
+        ])
+    }
+
+    var data = FormData(elements)
+
+    assert.deepEqual(data, {
+        foo: "one"
+    })
+
+    assert.end()
+})

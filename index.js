@@ -38,7 +38,17 @@ function valueOfElement(elem) {
     } else if (elem.tagName === "TEXTAREA") {
         return elem.value
     } else if (elem.tagName === "SELECT") {
-        return elem.value
+        if (elem.multiple) {
+            var values = []
+            for (var i = 0; i < elem.options.length; i++) {
+                if (elem.options[i].selected) {
+                    values.push(elem.options[i].value)
+                }
+            }
+            return values
+        } else {
+            return elem.value
+        }
     }
 }
 
